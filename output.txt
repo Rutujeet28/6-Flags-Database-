@@ -1,0 +1,102 @@
+SQL> set linesize 180
+SQL> set pages 5000
+SQL> column name format A20
+SQL> @projectDBqueries.sql
+
+RIDEID                                             AVERAGEDURATIONINMINUTE                                                                                                          
+-------------------------------------------------- -----------------------                                                                                                          
+RIDE_1728                                                               33                                                                                                          
+
+
+SSN                  HOMEZIPCOD        AGE                                                                                                                                          
+-------------------- ---------- ----------                                                                                                                                          
+112-11-6534          66837              51                                                                                                                                          
+153-55-9650          94564              59                                                                                                                                          
+178-14-2066          28629              62                                                                                                                                          
+197-62-2646          92082              62                                                                                                                                          
+208-93-1174          18454              52                                                                                                                                          
+230-41-9874          40962              70                                                                                                                                          
+259-80-6127          41267              68                                                                                                                                          
+293-46-2505          95738              57                                                                                                                                          
+297-69-5959          43798              56                                                                                                                                          
+326-22-1632          74454              58                                                                                                                                          
+349-55-1817          28230              72                                                                                                                                          
+367-53-8330          68002              58                                                                                                                                          
+383-16-6795          86816              63                                                                                                                                          
+394-29-6180          42271              59                                                                                                                                          
+414-58-6165          38775              68                                                                                                                                          
+420-11-3493          56841              64                                                                                                                                          
+462-21-5403          22496              61                                                                                                                                          
+515-41-8973          26328              62                                                                                                                                          
+545-21-7681          30400              51                                                                                                                                          
+550-51-5535          98736              58                                                                                                                                          
+
+20 rows selected.
+
+
+GENDER     PASSENGERCOUNT                                                                                                                                                           
+---------- --------------                                                                                                                                                           
+TOTAL                  74                                                                                                                                                           
+Male                   34                                                                                                                                                           
+Female                 40                                                                                                                                                           
+
+
+PASSID                                             RIDEID                                             PASSENGERCOUNT AGEGR                                                          
+-------------------------------------------------- -------------------------------------------------- -------------- -----                                                          
+PASS_6240                                          RIDE_8929                                                       1 51-60                                                          
+PASS_7896                                          RIDE_5717                                                       1 51-60                                                          
+PASS_9696                                          RIDE_1912                                                       1 51-60                                                          
+PASS_1276                                          RIDE_5815                                                       1 51-60                                                          
+PASS_4745                                          RIDE_5457                                                       1 51-60                                                          
+PASS_5167                                          RIDE_9652                                                       1 51-60                                                          
+PASS_7324                                          RIDE_2495                                                       1 51-60                                                          
+PASS_7603                                          RIDE_9896                                                       1 51-60                                                          
+PASS_9706                                          RIDE_6544                                                       1 51-60                                                          
+PASS_9877                                          RIDE_2206                                                       1 51-60                                                          
+PASS_4349                                          RIDE_6967                                                       1 51-60                                                          
+PASS_6009                                          RIDE_1615                                                       1 51-60                                                          
+PASS_9404                                          RIDE_7993                                                       1 51-60                                                          
+PASS_2484                                          RIDE_2735                                                       1 51-60                                                          
+PASS_6728                                          RIDE_1086                                                       1 51-60                                                          
+PASS_7315                                          RIDE_2361                                                       1 51-60                                                          
+
+16 rows selected.
+
+
+     EMPID DESIGNATION                                         AVGSALARY                                                                                                            
+---------- -------------------------------------------------- ----------                                                                                                            
+       105 Zone Manager                                            27000                                                                                                            
+       107 Zone Manager                                            28000                                                                                                            
+       102 Zone Manager                                            28000                                                                                                            
+
+
+BOOKINGID                                          NAME                                                                                                                             
+-------------------------------------------------- --------------------                                                                                                             
+BOOKING_2048                                       Atharva Patil                                                                                                                    
+BOOKING_1880                                       Alyson Lin                                                                                                                       
+BOOKING_3184                                       Alan Mccoy                                                                                                                       
+BOOKING_6221                                       Anabella Choi                                                                                                                    
+BOOKING_4628                                       Averi Andersen                                                                                                                   
+BOOKING_6651                                       Aliza Martinez                                                                                                                   
+
+6 rows selected.
+
+
+     EMPID     SALARY AVERAGESALARYACROSSALLEMPLOYEES                                                                                                                               
+---------- ---------- -------------------------------                                                                                                                               
+       101      25000                           26000                                                                                                                               
+       102      28000                           26000                                                                                                                               
+       103      22000                           26000                                                                                                                               
+       104      26000                           26000                                                                                                                               
+       105      27000                           26000                                                                                                                               
+       106      26000                           26000                                                                                                                               
+       107      28000                           26000                                                                                                                               
+
+7 rows selected.
+
+
+COUNT(Z.EMPID)                                                                                                                                                                      
+--------------                                                                                                                                                                      
+             7                                                                                                                                                                      
+
+SQL> spool off
